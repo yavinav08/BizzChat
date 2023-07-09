@@ -13,6 +13,7 @@ dotenv.config();
 const app=express();
 app.use(express.json()); // to accept JSON data
 
+
 connectDB()
 app.get('/',(req,res)=>{
     res.send("API is running");
